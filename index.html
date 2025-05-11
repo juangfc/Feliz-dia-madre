@@ -56,11 +56,10 @@
       color: #333;
       max-width: 600px;
       margin: 0 auto;
-      height: calc(100vh - 80px); /* Ajuste de altura para que todo encaje */
+      height: 100vh; /* Asegura que el contenido ocupe toda la pantalla */
       display: flex;
       flex-direction: column;
-      justify-content: center; /* Centra el contenido */
-      text-align: center;
+      justify-content: flex-start; /* Empuja el contenido hacia arriba */
     }
 
     h1 {
@@ -78,8 +77,8 @@
       border-radius: 12px;
       font-size: 18px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      max-height: 60%; /* Limitar la altura del mensaje */
-      overflow-y: scroll; /* Permitir desplazamiento si el texto es muy largo */
+      max-height: 60vh; /* Limita la altura del bloque del mensaje */
+      overflow-y: auto; /* Permite el scroll si el contenido excede el espacio */
       margin-bottom: 20px;
     }
 
