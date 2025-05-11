@@ -54,7 +54,7 @@
       text-align: center;
       padding: 40px 20px;
       color: #333;
-      max-width: 600px;
+      max-width: 800px; /* Aumento el ancho del contenedor */
       margin: 0 auto;
       top: 50%; /* Centra verticalmente */
       left: 50%;
@@ -69,21 +69,24 @@
       padding: 10px 20px;
       border-radius: 12px;
       margin-bottom: 20px;
-      font-size: 26px;
+      font-size: 28px; /* Aumento el tamaño de la fuente */
+      letter-spacing: 1px; /* Aumento el espaciado entre letras */
     }
 
     .mensaje {
       background-color: rgba(255, 255, 255, 0.85);
       padding: 20px;
       border-radius: 12px;
-      font-size: 18px;
+      font-size: 20px; /* Aumento el tamaño del texto */
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      line-height: 1.6; /* Aumento el espaciado entre líneas */
       max-height: 80%; /* Restringe la altura máxima */
       overflow-y: scroll; /* Habilita el scroll solo si es necesario */
+      letter-spacing: 0.5px; /* Espaciado adicional entre las letras */
     }
 
     .heart {
-      font-size: 30px;
+      font-size: 32px; /* Aumento el tamaño del corazón */
       color: #e60073;
       margin: 10px 0;
       animation: pulse 1.5s infinite;
@@ -97,15 +100,15 @@
 
     @media (max-width: 768px) {
       h1 {
-        font-size: 22px;
+        font-size: 24px; /* Ajusta el tamaño del título en pantallas pequeñas */
       }
 
       .mensaje {
-        font-size: 16px; /* Reducir el tamaño del texto en pantallas pequeñas */
+        font-size: 18px; /* Ajusta el tamaño del texto en pantallas pequeñas */
       }
 
       .heart {
-        font-size: 25px; /* Reducir el tamaño del corazón */
+        font-size: 28px; /* Ajusta el tamaño del corazón */
       }
     }
   </style>
