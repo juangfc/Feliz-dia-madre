@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz día Madre 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .collage-fondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .carousel {
+      display: flex;
+      width: calc(100% * 12); /* 6 imágenes x 2 */
+      height: 100%;
+      animation: scroll 100s linear infinite;
+    }
+
+    .carousel img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+      flex-shrink: 0;
+      filter: brightness(0.7);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .contenido {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 40px 20px;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #ffffff;
+      background-color: rgba(214, 51, 108, 0.7);
+      padding: 10px 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+
+    .mensaje {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 12px;
+      font-size: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .heart {
+      font-size: 30px;
+      color: #e60073;
+      margin: 10px 0;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Carrusel de fotos como fondo -->
+  <div class="collage-fondo">
+    <div class="carousel">
+      <img src="IMG_20180329_151414.jpg" alt="Foto 1">
+      <img src="IMG_20181003_183318.jpg" alt="Foto 2">
+      <img src="IMG_20230325_185629.jpg" alt="Foto 3">
+      <img src="IMG_20190512_181739.jpg" alt="Foto 4">
+      <img src="IMG_20230704_134303.jpg" alt="Foto 5">
+      <img src="IMG_20230707_155224.jpg" alt="Foto 6">
+      <!-- Repetidas -->
+      <img src="IMG_20180329_151414.jpg" alt="Foto 1">
+      <img src="IMG_20181003_183318.jpg" alt="Foto 2">
+      <img src="IMG_20230325_185629.jpg" alt="Foto 3">
+      <img src="IMG_20190512_181739.jpg" alt="Foto 4">
+      <img src="IMG_20230704_134303.jpg" alt="Foto 5">
+      <img src="IMG_20230707_155224.jpg" alt="Foto 6">
+    </div>
+  </div>
+
+  <!-- Contenido del mensaje -->
+  <div class="contenido">
+    <h1>💐 Feliz día Mamá 💐</h1>
+    <div class="mensaje">
+      <div class="heart">💖</div>
+      <p>
+        Mi madre hermosa, sé que no estamos cerca en este momento, pero no quería dejar pasar este día tan importante.  
+        Aunque no lo creas, eres la mejor mamá del mundo. Piensas que, por lo que ocurrió en años pasados, yo te tengo 
+        rabia, y es todo lo contrario. Sé que hemos tenido muchas peleas, pero el amor y el cariño que te tengo es más grande 
+        que todos los problemas.
+
+        Te agradezco todas las enseñanzas que me has dado. Te agradezco que siempre estés para mí, para ayudarme. Te agradezco 
+        que estés cuando no tengo ánimos. Pero lo más importante: GRACIAS POR SER MI MAMÁ.  
+        (P.D.: Sé que no te llamo constantemente, pero eso no significa que no te tenga tanto cariño. Sé que debo mejorar en 
+        ese aspecto de tener más comunicación contigo).  
+
+        Quiero cumplirte tus sueños más profundos, quiero comprarte eso que tanto anhelas, quiero llevarte a conocer todo el mundo.  
+        Por eso, te pido que me dures muchos años más, ojalá toda la vida. Mientras llega ese momento, por este medio te quiero 
+        expresar el cariño tan grande que te tengo. 
+        
+        💕
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
