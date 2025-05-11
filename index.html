@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <title>Feliz día Madre 💖</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Enlace a la fuente de Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     * {
       box-sizing: border-box;
@@ -14,9 +17,10 @@
 
     body, html {
       height: 100%;
-      font-family: 'Dancing Script', cursive;
+      font-family: 'Dancing Script', cursive; /* Fuente elegida */
       overflow: hidden;
       position: relative;
+      font-size: 18px; /* Tamaño de fuente general aumentado */
     }
 
     .collage-fondo {
@@ -49,42 +53,42 @@
       100% { transform: translateX(-50%); }
     }
 
-        .contenido {
+    .contenido {
       position: absolute;
       z-index: 1;
       text-align: center;
       padding: 40px 20px;
       color: #333;
-      max-width: 90%; /* Ajusta este valor para que ocupe más espacio */
+      max-width: 90%; /* Cambié esto a 90% para que el texto sea más ancho */
       margin: 0 auto;
-      top: 50%;
+      top: 50%; /* Centra verticalmente */
       left: 50%;
       transform: translate(-50%, -50%);
-      height: 80%;
-      overflow-y: auto;
+      height: 80%; /* Limita la altura de contenido */
+      overflow-y: auto; /* Permite el scroll */
     }
 
     h1 {
       color: #ffffff;
       background-color: rgba(214, 51, 108, 0.7);
-      padding: 10px 20px;
+      padding: 15px 30px; /* Aumenté el padding */
       border-radius: 12px;
       margin-bottom: 20px;
-      font-size: 26px;
+      font-size: 36px; /* Aumenté el tamaño de la fuente */
     }
 
     .mensaje {
       background-color: rgba(255, 255, 255, 0.85);
-      padding: 20px;
+      padding: 25px;
       border-radius: 12px;
-      font-size: 18px;
+      font-size: 22px; /* Aumenté el tamaño de la fuente del mensaje */
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       max-height: 80%; /* Restringe la altura máxima */
       overflow-y: scroll; /* Habilita el scroll solo si es necesario */
     }
 
     .heart {
-      font-size: 30px;
+      font-size: 40px; /* Aumenté el tamaño del corazón */
       color: #e60073;
       margin: 10px 0;
       animation: pulse 1.5s infinite;
@@ -98,15 +102,15 @@
 
     @media (max-width: 768px) {
       h1 {
-        font-size: 22px;
+        font-size: 28px; /* Ajuste para pantallas pequeñas */
       }
 
       .mensaje {
-        font-size: 16px; /* Reducir el tamaño del texto en pantallas pequeñas */
+        font-size: 20px; /* Ajuste para pantallas pequeñas */
       }
 
       .heart {
-        font-size: 25px; /* Reducir el tamaño del corazón */
+        font-size: 35px; /* Ajuste para pantallas pequeñas */
       }
     }
   </style>
