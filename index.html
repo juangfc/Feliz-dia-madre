@@ -49,17 +49,18 @@
     }
 
     .contenido {
-      position: relative;
+      position: absolute;
       z-index: 1;
       text-align: center;
       padding: 40px 20px;
       color: #333;
       max-width: 600px;
       margin: 0 auto;
-      height: 100vh; /* Asegura que el contenido ocupe toda la pantalla */
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start; /* Empuja el contenido hacia arriba */
+      top: 50%; /* Centra verticalmente */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 80%; /* Limita la altura de contenido */
+      overflow-y: auto; /* Permite el scroll */
     }
 
     h1 {
@@ -77,9 +78,8 @@
       border-radius: 12px;
       font-size: 18px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      max-height: 60vh; /* Limita la altura del bloque del mensaje */
-      overflow-y: auto; /* Permite el scroll si el contenido excede el espacio */
-      margin-bottom: 20px;
+      max-height: 80%; /* Restringe la altura máxima */
+      overflow-y: scroll; /* Habilita el scroll solo si es necesario */
     }
 
     .heart {
