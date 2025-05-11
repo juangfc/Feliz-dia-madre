@@ -38,7 +38,7 @@
     .carousel img {
       width: 100vw;
       height: 100vh;
-      object-fit: contain;
+      object-fit: cover; /* Cambié a cover para cubrir toda la pantalla */
       flex-shrink: 0;
       filter: brightness(0.7);
     }
@@ -56,6 +56,12 @@
       color: #333;
       max-width: 600px;
       margin: 0 auto;
+      overflow: hidden;
+      height: calc(100vh - 80px); /* Ajuste de altura para que todo encaje */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centra el contenido */
+      text-align: center;
     }
 
     h1 {
@@ -73,6 +79,9 @@
       border-radius: 12px;
       font-size: 18px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 20px; /* Añadí margen para separar el texto */
+      max-height: 60%; /* Limitar la altura del mensaje */
+      overflow-y: auto; /* Permitir desplazamiento si el texto es muy largo */
     }
 
     .heart {
@@ -86,6 +95,20 @@
       0% { transform: scale(1); }
       50% { transform: scale(1.2); }
       100% { transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      .mensaje {
+        font-size: 16px; /* Reducir el tamaño del texto en pantallas pequeñas */
+      }
+
+      .heart {
+        font-size: 25px; /* Reducir el tamaño del corazón */
+      }
     }
   </style>
 </head>
